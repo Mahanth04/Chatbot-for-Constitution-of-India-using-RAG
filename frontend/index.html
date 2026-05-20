@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered chatbot for the Constitution of India. Ask questions about fundamental rights, articles, and amendments.">
+    <title>Constitution of India — AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="header-logo">⚖️</div>
+                <div class="header-info">
+                    <h1>Constitution of India</h1>
+                    <p>AI-Powered Legal Assistant</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="btn-icon danger" id="clear-btn" title="Clear chat">🗑️</button>
+            </div>
+        </header>
+
+        <!-- Chat Area -->
+        <div class="chat-area" id="chat-area">
+            <div class="welcome-screen" id="welcome-screen">
+                <div class="welcome-icon">⚖️</div>
+                <h2>Ask about the Constitution</h2>
+                <p>I can answer questions about fundamental rights, directive principles, articles, amendments, and more.</p>
+                <div class="suggestion-chips">
+                    <button class="suggestion-chip">What is Article 21?</button>
+                    <button class="suggestion-chip">Explain fundamental rights</button>
+                    <button class="suggestion-chip">What is the Preamble?</button>
+                    <button class="suggestion-chip">Right to Equality</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <div class="input-wrapper">
+                <textarea id="chat-input" placeholder="Ask a question about the Constitution..." rows="1" autocomplete="off"></textarea>
+                <button id="send-btn" title="Send message">➤</button>
+            </div>
+            <div class="input-hint">Press <kbd>Enter</kbd> to send · <kbd>Shift+Enter</kbd> for new line</div>
+        </div>
+
+        <!-- Error Toast -->
+        <div class="error-toast" id="error-toast"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
